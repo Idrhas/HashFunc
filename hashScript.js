@@ -2,7 +2,7 @@
 const crypto = require("crypto");
 
 // import readline module and create an interface to request user input
-const readlines = require("readline").createInterface({
+const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
