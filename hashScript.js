@@ -2,7 +2,7 @@
 const crypto = require("crypto");
 
 // import readline module and create an interface to request user input
-const readline = require("readline").createInterface({
+const gbemidebe = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -19,8 +19,8 @@ function hashingInput(inputValue) {
 // Prompt the user for their input
 
 function promptUserInput() {
-  readlines.question("Enter your any value: ", (inputValue) => {
-    if (inputValue == "done") readlines.close();
+  gbemidebe.question("Enter any value: ", (inputValue) => {
+    if (inputValue == "done") gbemidebe.close();
     else {
       const hashVal = hashingInput(inputValue);
       console.log(`The Hash value for ${inputValue} is:\n\t${hashVal}`);
